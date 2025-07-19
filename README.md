@@ -80,11 +80,11 @@ Autores
 |GET | /api/autores/:id | Pega um autor por ID
 |POST | /api/autores | Cria um novo autor
 |PUT | /api/autores/:id | Atualiza um autor
-|DELETE |/api/autores/:id | Deleta um autor
+|DELETE | /api/autores/:id | Deleta um autor
 
 
 Livros
-| Método	Rota	Descrição |
+| Método | Rota | Descrição |
 |:---|:---:|:---|
 | GET | /api/livros | Lista todos os livros
 | GET | /api/livros/:id | Pega um livro por ID
