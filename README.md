@@ -93,6 +93,7 @@ Livros
 | DELETE | /api/livros/:id | Deleta um livro
 
 Feito por
+
 Nome: João Victor da Silva Oliveira
 
 Curso: Análise e Desenvolvimento de Sistemas
