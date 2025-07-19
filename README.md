@@ -86,11 +86,11 @@ Autores
 Livros
 | Método	Rota	Descrição |
 |:---|:---:|:---|
-| GET | /api/livros | Lista todos os livros |
-| GET | /api/livros/:id | Pega um livro por ID |
-| POST | /api/livros | Cria um novo livro |
-| PUT | /api/livros/:id | Atualiza um livro |
-| DELETE | /api/livros/:id | Deleta um livro |
+| GET | /api/livros | Lista todos os livros
+| GET | /api/livros/:id | Pega um livro por ID
+| POST | /api/livros | Cria um novo livro
+| PUT | /api/livros/:id | Atualiza um livro
+| DELETE | /api/livros/:id | Deleta um livro
 
 Feito por
 Nome: João Victor da Silva Oliveira
