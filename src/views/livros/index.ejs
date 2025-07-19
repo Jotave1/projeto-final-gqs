@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Livros</title>
+    <style>
+        body { font-family: sans-serif; container: 800px; margin: auto; padding: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        a { text-decoration: none; color: #007bff; }
+        .btn { padding: 10px 15px; background-color: #007bff; color: white; border-radius: 5px; margin-right: 10px; }
+        nav { margin-bottom: 20px; }
+    </style>
+    </head>
+    <body>
+    <nav>
+        <a href="/autores" class="btn">Ver Autores</a>
+        <a href="/livros" class="btn">Ver Livros</a>
+    </nav>
+
+    <h1>Livros Cadastrados</h1>
+    <p><a href="/livros/novo" class="btn" style="background-color: #28a745;">Cadastrar Novo Livro</a></p>
+    
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Ano de Publicação</th>
+            <th>Autor</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% livros.forEach(livro => { %>
+            <tr>
+            <td><%= livro.id %></td>
+            <td><%= livro.titulo %></td>
+            <td><%= livro.ano_publicacao %></td>
+            <td><%= livro.autor ? livro.autor.nome : 'Não especificado' %></td>
+            </tr>
+        <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Livro</title>
+    <style>
+        body { font-family: sans-serif; container: 800px; margin: auto; padding: 20px; }
+        form { display: flex; flex-direction: column; max-width: 400px; }
+        label { margin-bottom: 5px; }
+        input, select { padding: 8px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ddd; }
+        button { padding: 10px 15px; background-color: #28a745; color: white; border-radius: 5px; border: none; cursor: pointer; }
+        a { color: #007bff; }
+    </style>
+    </head>
+    <body>
+    <h1>Cadastrar Novo Livro</h1>
+    
+    <form action="/livros" method="POST">
+        <label for="titulo">Título do Livro:</label>
+        <input type="text" id="titulo" name="titulo" required>
+        
+        <label for="ano_publicacao">Ano de Publicação:</label>
+        <input type="number" id="ano_publicacao" name="ano_publicacao">
+        
+        <label for="autorId">Autor:</label>
+        <select id="autorId" name="autorId" required>
+        <option value="">Selecione um autor</option>
+        <% autores.forEach(autor => { %>
+            <option value="<%= autor.id %>"><%= autor.nome %></option>
+        <% }); %>
+        </select>
+        
+        <button type="submit">Salvar</button>
+    </form>
+    
+    <p><a href="/livros">Voltar para a lista</a></p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Autor</title>
+    <style>
+        body { font-family: sans-serif; container: 800px; margin: auto; padding: 20px; }
+        form { display: flex; flex-direction: column; max-width: 400px; }
+        label { margin-bottom: 5px; }
+        input { padding: 8px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ddd; }
+        button { padding: 10px 15px; background-color: #28a745; color: white; border-radius: 5px; border: none; cursor: pointer; }
+        a { color: #007bff; }
+    </style>
+    </head>
+    <body>
+    <h1>Cadastrar Novo Autor</h1>
+    
+    <form action="/autores" method="POST">
+        <label for="nome">Nome do Autor:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <button type="submit">Salvar</button>
+    </form>
+    
+    <p><a href="/autores">Voltar para a lista</a></p>
+</body>
+</html>

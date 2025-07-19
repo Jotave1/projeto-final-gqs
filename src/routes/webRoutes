@@ -1,0 +1,14 @@
+const express = require('express');
+const router = express.Router();
+const AutorController = require('../controllers/AutorController');
+const LivroController = require('../controllers/LivroController');
+
+router.get('/autores', AutorController.renderLista);
+router.get('/autores/novo', AutorController.renderNovoForm);
+router.post('/autores', AutorController.createFromWeb);
+
+router.get('/livros', LivroController.renderLista);
+router.get('/livros/novo', LivroController.renderNovoForm);
+router.post('/livros', LivroController.createFromWeb);
+
+module.exports = router;
